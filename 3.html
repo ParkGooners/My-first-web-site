@@ -3,14 +3,38 @@
 <head>
     <title>Monkey_Rabbit</title>
     <meta charset="UTF-8">
+    <style>
+        
+        #active {          
+            color: red;
+            text-decoration: underline;
+        }
+
+        .saw {
+            color:grey;
+        }
+        
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+        }
+    </style>
+    <!-- 선택자의 우선순위 #active > .saw = .active > a 순서이다. 
+        #active를 이용할 경우 id를 이용해줘야한다. .active .saw의 영향력은 가장 마지막 것이 크다. 
+        id 선택자 > class 선택자 > tag 선택자 -->
 </head>
 
 <body>
     <h1><a href="index.html">Monkey_Rabbit</a></h1>
     <ul>
-        <li><a href="1.html">부산여행</a></li>
-        <li><a href="2.html">강릉여행</a></li>
-        <li><a href="3.html">제주도여행</a></li>
+        <li><a href="1.html" class="saw">부산여행</a></li>
+        <li><a href="2.html" class="saw">강릉여행</a></li>
+        <li><a href="3.html" class="saw active" id="active">제주도여행</a></li>
         <li><a href="4.html">일본여행</a></li>
     </ul>
 
